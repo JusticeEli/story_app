@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "865117390258",
+    "firebase_url": "https://story-app-1d72e.firebaseio.com",
+    "project_id": "story-app-1d72e",
+    "storage_bucket": "story-app-1d72e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865117390258:android:a92560afd2ce0208f850ab",
+        "android_client_info": {
+          "package_name": "com.justice.storyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865117390258-6mvl1uj4drrljsab5k1ipo44mcrqtbep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.justice.storyapp",
+            "certificate_hash": "a750750b75522391484378f5e5806f12824dc71e"
+          }
+        },
+        {
+          "client_id": "865117390258-im041ho0lmm6kedli6jbp3e7eib734he.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgzfcxksNV1LIIq02fAcFmluojw345t9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865117390258-im041ho0lmm6kedli6jbp3e7eib734he.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

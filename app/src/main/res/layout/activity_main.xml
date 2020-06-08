@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/comedyBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_left_button"
+        android:onClick="onBtnClick"
+        android:text="Comedy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fantacyBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_right_button"
+        android:onClick="onBtnClick"
+        android:text="Fantacy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/realLifeBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_right_button"
+        android:onClick="onBtnClick"
+        android:text="Real Life"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fantacyBtn" />
+
+    <Button
+        android:id="@+id/motivationBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_left_button"
+        android:onClick="onBtnClick"
+        android:text="Motivation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comedyBtn" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onBtnClick"
+        android:src="@drawable/ic_add"
+        app:layout_constraintEnd_toStartOf="@+id/realLifeBtn"
+        app:layout_constraintStart_toEndOf="@+id/motivationBtn"
+        app:layout_constraintTop_toBottomOf="@+id/motivationBtn" />
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/kenBurnsView"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/mountain"
+        app:layout_constraintBottom_toTopOf="@+id/fob"
+        app:layout_constraintEnd_toStartOf="@+id/fantacyBtn"
+        app:layout_constraintStart_toEndOf="@+id/comedyBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
